@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, p, a {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    padding: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.result-container {
+    margin-left: 2em;
+    margin-right: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 800px;
+    height: 500px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    box-shadow: 5px 40px 200px hsl(241, 100%, 89%);
+}
+.result-left {
+    background-image: linear-gradient(280deg, hsl(252, 100%, 67%) 35%, hsl(241, 81%, 54%) 100%);
+    background-attachment: fixed;
+    width: 100%;
+    border-radius: 15px;
+    z-index: 1;
+    padding: 2em;
+    text-align: center;
+    display: grid;
+    gap: 15px;
+}
+
+.result-right {
+    width: 100%;
+    padding: 2em;
+    display: grid;
+    gap: 20px;
+}
+
+span {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+}
+
+.Number-Circle {
+    background-image: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 35%, hsla(241, 72%, 46%, 0) 55%);
+    background-attachment: fixed;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-inline: auto;
+    display: grid;
+    place-content: center;
+}
+
+.summary-stats1 {
+    width: 100%;
+    background-color: hsl(0, 100%, 67%, 0.2);
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.summary-stats2 {
+    width: 100%;
+    background-color: hsl(39, 100%, 56%, 0.2);
+    color: hsl(39, 100%, 56%);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.summary-stats3 {
+    width: 100%;
+    background-color: hsl(166, 100%, 37%, 0.2);
+    color: hsl(166, 100%, 37%);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.summary-stats4 {
+    width: 100%;
+    background-color: hsl(234, 85%, 45%, 0.2);
+    color: hsl(234, 85%, 45%);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.numberScore {
+    color: hsl(224, 30%, 27%);
+}
+
+.continue {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    height: 50px;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+}
+
+/* Mobile */
+@media only screen and (max-width: 520px){
+    .result-container {
+        grid-template-columns: 1fr;
+        margin: 0;
+        height: auto;
+        height: 100%;
+        box-shadow: none;
+    }
+
+    .result-left {
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .attribution {
+        visibility: hidden;
+    }
+}
