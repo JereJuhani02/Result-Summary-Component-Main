@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-h1, p, a {
+h1,
+p,
+a {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
@@ -12,6 +14,7 @@ h1, p, a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-firection: column;
 }
 
 body {
@@ -21,11 +24,12 @@ body {
 }
 
 .attribution {
+    margin-top: 10px;
     font-size: 11px;
     text-align: center;
     position: absolute;
     text-align: center;
-    bottom: 0;
+    position: relative;
     padding: 20px;
 }
 
@@ -44,6 +48,7 @@ body {
     border-radius: 15px;
     box-shadow: 5px 40px 200px hsl(241, 100%, 89%);
 }
+
 .result-left {
     background-image: linear-gradient(280deg, hsl(252, 100%, 67%) 35%, hsl(241, 81%, 54%) 100%);
     background-attachment: fixed;
@@ -89,6 +94,17 @@ span {
     justify-content: space-between;
     padding: 1em;
     border-radius: 15px;
+}
+
+.iconPlusText {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.icon {
+    padding: 5px;
 }
 
 .summary-stats2 {
